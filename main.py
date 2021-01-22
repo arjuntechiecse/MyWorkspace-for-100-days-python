@@ -542,6 +542,17 @@ for a in range(2,101,2):
   i=i+a
 print(i)
 
+#Day Exercise 5.4 fizz buzz problem
+#Write your code below this row 👇
+for inc in range (1,101):
+  if(inc%3==0 and inc%5==0):
+    print("fizzbuzz")
+  elif(inc%3==0):
+    print("fizz")
+  elif(inc%5==0):
+    print("buzz")
+  else:
+    print(inc)
 
 
 
