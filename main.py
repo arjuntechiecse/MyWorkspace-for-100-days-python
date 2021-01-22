@@ -469,3 +469,64 @@ elif computer_choice == user_choice:
  
 
 
+#DAY 5
+
+#DAY5.1 sum and avg height of persons in a list using loop
+#My version
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+#
+counter = 0
+for a in student_heights:
+  counter+=1
+
+sum=0
+for b in range(0,counter):
+  sum+=student_heights[b]
+  avg=sum/counter
+print(round(avg))
+
+#Lecture version
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# print(student_heights)
+
+total_height = 0
+for height in student_heights:
+  total_height += height
+print(f"total height = {total_height}")
+
+number_of_students = 0
+for student in student_heights:
+  number_of_students += 1
+print(f"number of students = {number_of_students}")
+  
+average_height = round(total_height / number_of_students)
+print(average_height)
+
+#5.2 Finding Highet_score in list using loop.
+
+# 🚨 Don't change the code below 👇
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+high=0
+for i in student_scores:
+  if(i>high):
+    high=i
+print(f"The highest score in the class is: {high}")    
+
+
+
+
+
+
