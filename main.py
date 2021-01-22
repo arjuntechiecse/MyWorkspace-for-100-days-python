@@ -524,7 +524,23 @@ for i in student_scores:
   if(i>high):
     high=i
 print(f"The highest score in the class is: {high}")    
+#Day 5.3 exercise sum of even numbers upto 100.
 
+#Write your code below this row 👇
+#My method
+i=0
+for inc in range(1,101):
+  if(inc%2==0):
+    i=i+inc
+
+print(i)
+
+#lecture method
+
+i=0
+for a in range(2,101,2):
+  i=i+a
+print(i)
 
 
 
